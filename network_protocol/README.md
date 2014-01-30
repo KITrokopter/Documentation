@@ -1,15 +1,6 @@
 # Common data types
 
-## Image
-* Name: Image
-* Description: Just an image.
-
-### Data
-
-```
-Header header
-uint8[] imageData
-```
+-- none --
 
 # API
 
@@ -138,7 +129,7 @@ bool ok
 *   Sender: API
 *   Empfänger: Steuerungsanwendung
 *   Beschreibung: Service, der bewirkt, dass alle Kameras ein Bild machen, und wenn genug gute Bilder dabei sind, werden diese an die API gesendet.
-*   Requieres: Image
+*   Requieres: Image defined in sensor_msgs
 
 ### Daten
 
