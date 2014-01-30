@@ -1,3 +1,16 @@
+# Common data types
+
+## Image
+* Name: Image
+* Description: Just an image.
+
+### Data
+
+```
+Header header
+uint8[] imageData
+```
+
 # API
 
 ## Globaler Ping
@@ -125,13 +138,14 @@ bool ok
 *   Sender: API
 *   Empfänger: Steuerungsanwendung
 *   Beschreibung: Service, der bewirkt, dass alle Kameras ein Bild machen, und wenn genug gute Bilder dabei sind, werden diese an die API gesendet.
+*   Requieres: Image
 
 ### Daten
 
 ```
 Header header
 ---
-uint8[][] images
+Image[] images
 ```
 
 ## Berechne Kalibrierung
