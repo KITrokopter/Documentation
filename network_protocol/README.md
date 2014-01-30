@@ -181,14 +181,6 @@ float32 yOrientation
 float32 zOrientation
 ```
 
-## Gesamtkoordinatensystem
-
-*   Name: GlobalCoordinateSystem
-*   Typ: Topic
-*   Sender: Steueranwendung
-*   Empfänger: API
-*   Beschreibung: Kanal um das Gesamtkoordinatensystem zu senden
-
 ## Bewegungsdaten
 
 *   Name: Movement
