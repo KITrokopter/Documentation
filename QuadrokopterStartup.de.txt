@@ -1,0 +1,13 @@
+Systemstartvorgang aus sicht der Quadrokopter (draft)
+
+1.  Die Quadrokoptermodule werden gestartet.
+2.  Die Quadrokoptermodule melden sich an einem topic an um die Crazyflies auszuhandeln. (Siehe Aushandelvorgang)
+3.  Die Quadrokoptermodule melden sich bei der API und warten.
+4.  Die API weist den Quadrokoptermodulen ihre ids zu.
+5.  Auf dem globelen Startkanal wird ein start geschickt und die Quadrokoptermodule fangen mit der Arbeit an (siehe Netzwerkprotokoll)
+
+Aushandelvorgang:
+
+Der Aushandelvorgang soll ohne wissen über die Gesamtzahl der Quadrokoptermodule stattfinden. Den Quadrokoptermodulen wird vertraut.
+
+1. Ein Quadrokoptermodul 
