@@ -129,7 +129,7 @@ bool ok
 *   Sender: API
 *   Empfänger: Steuerungsanwendung
 *   Beschreibung: Service, der bewirkt, dass alle Kameras ein Bild machen, und wenn genug gute Bilder dabei sind, werden diese an die API gesendet.
-*   Requieres: Image defined in sensor_msgs
+*   Requires: Image defined in sensor_msgs
 
 ### Daten
 
@@ -158,7 +158,7 @@ float64[] cameraZPositions
 float64[] cameraXOrientation
 float64[] cameraYOrientation
 float64[] cameraZOrientation
-float64[] cameraIDs
+uint32[] IDs
 ```
 
 ## Aktuelle Positionen
