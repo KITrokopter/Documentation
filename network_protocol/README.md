@@ -118,6 +118,8 @@ float64 zMovement
 
 ```
 Header header
+uint32 chessboardWidth
+uint32 chessboardHeight
 ---
 bool ok
 ```
