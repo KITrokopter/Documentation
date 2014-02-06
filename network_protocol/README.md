@@ -250,7 +250,7 @@ uint8[] quadcopterIds
 
 ```
 Header header
-uint32 ID
+uint32 ID # if 0, all cameras should be activated/deactivated.
 boolean active
 ```
 
