@@ -70,7 +70,7 @@ uint32 ID # Wenn ID = -1 Dann Fehler
 
 # Steueranwendung
 
-## Gesetzte Formation
+## Setzte Formation
 
 *   Name: SetFormation
 *   Typ: Topic
