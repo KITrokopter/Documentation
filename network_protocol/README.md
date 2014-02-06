@@ -47,7 +47,7 @@ uint8 command # 1 = Start, 2 = Ende
 Header header
 uint32 senderID
 uint8 type # 1 = Message, 2 = Warning, 3 = Error
-uint8[] message
+string message
 ```
 
 ## Anmeldeservice
@@ -63,7 +63,7 @@ uint8[] message
 Header header
 uint8 type # 0 = Camera, 1 = Quadcopter, 2 = Controller, 3 = Position
 uint64 cameraId # Wenn type != 0 dann cameraId undefiniert
-uint8[] initializeServiceName
+string initializeServiceName
 ---
 uint32 ID # Wenn ID = -1 Dann Fehler
 ```
