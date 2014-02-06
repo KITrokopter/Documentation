@@ -24,7 +24,7 @@ uint32 ID
 *   Name: System
 *   Sender: API
 *   Empfänger: Alle außer API
-*   Beschreibung: Kanal, in dem die API das System den Startbefehl geben und beenden kann.
+*   Beschreibung: Kanal, in dem die API den Modulen den Start- und Beende-befehl geben kann.
 
 ### Daten
 
