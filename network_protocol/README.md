@@ -109,7 +109,18 @@ float64 zMovement
 ## Starte Kalibrierung
 
 *   Name: StartCalibration
-*   Typ: Service
+*   Typ: ServiceHeader header
+uint32 id #TODO: may be not necessary
+float32 battery_status
+float32 link_quality
+uint16 motor_m1
+uint16 motor_m2
+uint16 motor_m3
+uint16 motor_m4
+float32 stabilizer_roll
+float32 stabilizer_pitch
+float32 stabilizer_yaw
+uint16 stabilizer_thrust
 *   Sender: API
 *   Empfänger: Steuerungsanwendung
 *   Beschreibung: Service mit dem die API den Kalibrierungsprozess starten kann.
@@ -137,7 +148,18 @@ bool ok
 
 ```
 Header header
----
+---Header header
+uint32 id #TODO: may be not necessary
+float32 battery_status
+float32 link_quality
+uint16 motor_m1
+uint16 motor_m2
+uint16 motor_m3
+uint16 motor_m4
+float32 stabilizer_roll
+float32 stabilizer_pitch
+float32 stabilizer_yaw
+uint16 stabilizer_thrust
 Image[] images
 ```
 
@@ -165,7 +187,18 @@ uint32[] IDs
 
 ## Aktuelle Positionen
 
-*   Name: CurrentPositions
+*   Name: CurrentPositionsHeader header
+uint32 id #TODO: may be not necessary
+float32 battery_status
+float32 link_quality
+uint16 motor_m1
+uint16 motor_m2
+uint16 motor_m3
+uint16 motor_m4
+float32 stabilizer_roll
+float32 stabilizer_pitch
+float32 stabilizer_yaw
+uint16 stabilizer_thrust
 *   Typ: Topic
 *   Sender: Steueranwendung
 *   Empfänger: API
@@ -185,7 +218,8 @@ float32 zOrientation
 
 ## Bewegungsdaten
 
-*   Name: Movement
+*   Name: quadcopter_controll_{ID}
+*   Message-Typ: quadcopter_controll.msg
 *   Typ: Topic
 *   Sender: Steueranwendung
 *   Empfänger: Quadcopters
@@ -194,11 +228,10 @@ float32 zOrientation
 Daten
 ```
 Header header
-uint32 id
 uint16 thrust
-float32 yaw
-float32 pitch
 float32 roll
+float32 pitch
+float32 yaw
 ```
 
 # Kameraanwendung
@@ -311,7 +344,8 @@ uint8 error # 0 bei ok, != 0 sonst
 
 ## Quadrokopter Statusinformationen
 
-*   Name: QuadcopterStatus
+*   Name: quadcopter_status_{ID}
+*   Message-Typ: quadcopter_status.msg
 *   Typ: Topic
 *   Sender: Quadrokopteranwendung
 *   Empfänger: API-Anwendung
@@ -321,24 +355,15 @@ uint8 error # 0 bei ok, != 0 sonst
 
 ```
 Header header
-uint32 ID
+uint32 id
 float32 battery_status
 float32 link_quality
-float32 altimeter
-float32 mag_x
-float32 mag_y
-float32 mag_z
-float32 gyro_x
-float32 gyro_y
-float32 gyro_z
-float32 acc_x
-float32 acc_y
-float32 acc_z
 uint16 motor_m1
 uint16 motor_m2
 uint16 motor_m3
 uint16 motor_m4
-float32 roll
-float32 pitch
-float32 yaw
+float32 stabilizer_roll
+float32 stabilizer_pitch
+float32 stabilizer_yaw
+uint16 stabilizer_thrust
 ```
