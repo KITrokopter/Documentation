@@ -231,7 +231,7 @@ uint8 quadcopterId
 ```
 Header header
 uint32 ID # if 0, all cameras should be activated/deactivated.
-boolean active
+bool active
 ```
 
 ## Kalibrierungsauftrag
@@ -267,7 +267,7 @@ float32 boardRectangleHeight
 ```
 Header header
 # uint64 cameraHardwareId # We don't have that right now...
-boolean createdByCamera
+bool createdByCamera
 float64[3*3] intrinsics
 float64[4] distortion
 ```
