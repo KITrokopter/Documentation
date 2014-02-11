@@ -196,6 +196,7 @@ Header header
 uint32 ID
 uint32 imageNumber # Bei Kalibrierung Nummer des Kalibrierungs-
 # bilds, sonst inkrementiert pro Bild
+bool calibrationImage # True if image is used for calibration of single camera.
 uint64 timestamp # Wann das Bild gemacht wurde
 uint8[640*480*3] image
 ```
