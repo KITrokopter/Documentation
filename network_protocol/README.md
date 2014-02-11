@@ -267,6 +267,7 @@ float32 boardRectangleHeight
 ```
 Header header
 # uint64 cameraHardwareId # We don't have that right now...
+uint32 ID
 bool createdByCamera
 float64[3*3] intrinsics
 float64[4] distortion
