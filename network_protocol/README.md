@@ -109,18 +109,7 @@ float64 zMovement
 ## Starte Kalibrierung
 
 *   Name: StartCalibration
-*   Typ: ServiceHeader header
-uint32 id #TODO: may be not necessary
-float32 battery_status
-float32 link_quality
-uint16 motor_m1
-uint16 motor_m2
-uint16 motor_m3
-uint16 motor_m4
-float32 stabilizer_roll
-float32 stabilizer_pitch
-float32 stabilizer_yaw
-uint16 stabilizer_thrust
+*   Typ: Service
 *   Sender: API
 *   Empfänger: Steuerungsanwendung
 *   Beschreibung: Service mit dem die API den Kalibrierungsprozess starten kann.
@@ -148,19 +137,8 @@ bool ok
 
 ```
 Header header
----Header header
-uint32 id #TODO: may be not necessary
-float32 battery_status
-float32 link_quality
-uint16 motor_m1
-uint16 motor_m2
-uint16 motor_m3
-uint16 motor_m4
-float32 stabilizer_roll
-float32 stabilizer_pitch
-float32 stabilizer_yaw
-uint16 stabilizer_thrust
-Image[] images
+---
+sensor_msgs/Image[] images
 ```
 
 ## Berechne Kalibrierung
@@ -187,40 +165,7 @@ uint32[] IDs
 
 ## Aktuelle Positionen
 
-*   Name: CurrentPositionsHeader header
-uint32 id #TODO: may be not necessary
-float32 battery_status
-float32 link_quality
-uint16 motor_m1
-uint16 motor_m2
-uint16 motor_m3
-uint16 motor_m4
-float32 stabilizer_roll
-float32 stabilizer_pitch
-float32 stabilizer_yaw
-uint16 stabilizer_thrust
-*   Typ: Topic
-*   Sender: Steueranwendung
-*   Empfänger: API
-*   Beschreibung: Kanal um neu berechnete aktuelle Positionen(Position mit Orientierung) der Quadrokopter zu senden
-
-Daten
-```
-Header header
-uint32 ID
-float32 xPosition
-float32 yPosition
-float32 zPosition
-float32 xOrientation
-float32 yOrientation
-float32 zOrientation
-```
-
-## Bewegungsdaten
-
-*   Name: quadcopter_controll_{ID}
-*   Message-Typ: quadcopter_controll.msg
-*   Typ: Topic
+*   Name: CurrentPositions
 *   Sender: Steueranwendung
 *   Empfänger: Quadcopters
 *   Beschreibung: Kanal um die Bewegungsdaten der Quadrokopter zu senden
