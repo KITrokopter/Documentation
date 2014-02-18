@@ -118,8 +118,10 @@ float64 zMovement
 
 ```
 Header header
-uint32 chessboardWidth
-uint32 chessboardHeight
+uint32 chessboardWidth # The amount of horizontal corners of the chessboard.
+uint32 chessboardHeight # The amount of vertical corners of the chessboard.
+float64 chessboardRealWidth # The widht of the chessboard, leftmost corner to rightmost corner.
+float64 chessboardRealHeight # The height of the chessboard, topmost corner to bottommost corner.
 ---
 bool ok
 ```
