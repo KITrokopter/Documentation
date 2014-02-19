@@ -308,7 +308,6 @@ uint8 error # 0 bei ok, != 0 sonst
 
 ```
 Header header
-uint32 id
 float32 battery_status
 float32 link_quality
 uint16 motor_m1
@@ -319,4 +318,19 @@ float32 stabilizer_roll
 float32 stabilizer_pitch
 float32 stabilizer_yaw
 uint16 stabilizer_thrust
+```
+
+## Search quadcopters
+
+* name: search_link_{ID}
+* service type: search_links.srv
+* type: service
+* sender: quadcopter application
+* receiver: api application
+* description: service, which searches for all available quadcopters and returns their channels
+
+### data
+
+```
+uint16[] channels
 ```
