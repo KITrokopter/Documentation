@@ -4,20 +4,6 @@
 
 # API
 
-## Globaler Ping
-
-*   Name: Ping
-*   Typ: Topic
-*   Sender: Alle außer API
-*   Empfänger: API
-*   Beschreibung: Kanal, in dem alle Anwendungen mitteilen, dass sie da sind.
-
-### Daten
-
-```
-Header header
-uint32 ID
-```
 
 ## Systemstart und Systemshutdown
 
@@ -70,7 +56,7 @@ uint32 ID # Wenn ID = -1 Dann Fehler
 
 # Steueranwendung
 
-## Setzte Formation
+## Gesetzte Formation
 
 *   Name: SetFormation
 *   Typ: Topic
@@ -175,7 +161,11 @@ uint32[] IDs
 Daten
 ```
 Header header
+uint32 quadcopterdId
 uint16 thrust
+float32 xPosition
+float32 yPosition
+float32 zPosition
 float32 roll
 float32 pitch
 float32 yaw
@@ -320,3 +310,4 @@ float32 stabilizer_pitch
 float32 stabilizer_yaw
 uint16 stabilizer_thrust
 ```
+
