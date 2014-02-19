@@ -1,5 +1,5 @@
 Systemstartvorgang aus Sicht der Quadrokopter
-=========
+--------------
 
 1.  Die Quadrokoptermodule werden gestartet.
 2.  Die Quadrokoptermodule melden sich bei der API und erhalten ihre ID.
