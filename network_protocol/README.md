@@ -322,5 +322,6 @@ uint16 stabilizer_thrust
 ### data
 
 ```
+---
 uint16[] channels
 ```
