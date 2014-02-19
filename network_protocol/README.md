@@ -92,6 +92,24 @@ float64 yMovement
 float64 zMovement
 ```
 
+## Bewegung der Quadrokopter
+
+*   Name: quadcopter_movement_{id}
+*   Typ: Topic
+*   Sender: Steuerungsanwendung
+*   Empfänger: Quadkopteranwendung
+*   Beschreibung: Bewegungsbefehle (roll, pitch, yaw, thrust) and Quadkopter.
+
+### Daten
+
+```
+Header header
+uint16 thrust
+float32 roll
+float32 pitch
+float32 yaw
+```
+
 ## Starte Kalibrierung
 
 *   Name: StartCalibration
