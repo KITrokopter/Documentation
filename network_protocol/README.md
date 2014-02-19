@@ -341,5 +341,5 @@ uint16 stabilizer_thrust
 
 ```
 ---
-uint16[] channels
+uint8[] channels
 ```
