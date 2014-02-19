@@ -216,7 +216,7 @@ uint8[640*480*3] image
 *   Typ: Topic
 *   Sender: Kameraanwendung
 *   Empfänger: Positionsmodul
-*   Beschreibung: Kanal um die Positionsinformationen die aus dem Bild extrathiert wurden zu senden.
+*   Beschreibung: Kanal um die Positionsinformationen die aus dem Bild extrahiert wurden zu senden.
 
 ### Daten
 
@@ -234,7 +234,7 @@ uint8 quadcopterId
 *   Typ: Topic
 *   Sender: API
 *   Empfänger: Kameraanwendung
-*   Beschreibung: Kanal um das senden der Bilder zu aktivieren und deaktivieren.
+*   Beschreibung: Kanal um das Senden der Bilder zu aktivieren und deaktivieren.
 
 ### Daten
 
@@ -250,7 +250,7 @@ bool active
 *   Typ: Topic
 *   Sender: API
 *   Empfänger: Kameraanwendung
-*   Beschreibung: Kanal um das Kalibrieren eine Kamera zu starten. Kalibrierungsbilder werden über das Bildertopic gesendet. Bei Erfolg werden die Daten über das Einzelkamera-Kalibrierungsdatentopic gesendet.
+*   Beschreibung: Kanal um das Kalibrieren einer Kamera zu starten. Kalibrierungsbilder werden über das Bildertopic gesendet. Bei Erfolg werden die Daten über das Einzelkamera-Kalibrierungsdatentopic gesendet.
 
 ### Daten
 
@@ -283,7 +283,7 @@ float64[3*3] intrinsics
 float64[4] distortion
 ```
 
-## Initialize Camera
+## Initialisierung der Kamera
 
 *   Name: InitializeCameraService[ID]
 *   Typ: Service
