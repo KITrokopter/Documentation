@@ -145,6 +145,7 @@ bool ok
 Header header
 ---
 sensor_msgs/Image[] images
+uint32[] ids # The ids of the cameras that belong to the images.
 ```
 
 ## Berechne Kalibrierung
