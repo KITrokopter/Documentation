@@ -38,7 +38,7 @@ string message
 
 ## Anmeldeservice
 
-*   Name: Announce
+*   Name: announce
 *   Sender: Alle außer API // Die API hat per default den Namen API
 *   Empfänger: API
 *   Beschreibung: Service an dem sich jede Anwendung anmeldet.
