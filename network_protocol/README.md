@@ -164,9 +164,8 @@ Header header
 float64[] cameraXPositions
 float64[] cameraYPositions
 float64[] cameraZPositions
-float64[] cameraXOrientation
-float64[] cameraYOrientation
-float64[] cameraZOrientation
+float64[] cameraRotationMatrices # Contains the 3x3 rotation matrices for the cameras.
+                                 # Every matrix has 9 entries row by row.
 uint32[] IDs
 ```
 
