@@ -10,6 +10,10 @@ Starting the system as seen by the user
 * On every (! even the computer that will have roscore running) computer, on every terminal you use for rosrun, execute `export ROS_MASTER_URI=http://<ip of the machine that will run roscore>:11311`.
 * Execute roscore on the machine set as ROS_MASTER_URI.
 
+### Time synchronisation
+* `sudo apt-get install ntp` auf dem Rechner mit IP <ip>
+* Run `ntpdate -p 8 <ip>`
+
 ### KITrokopter
 
 * Start the API on any machine you want.
