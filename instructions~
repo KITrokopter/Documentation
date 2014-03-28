@@ -1,3 +1,12 @@
+Aufstellung der Kameras:
+	   Camera 0	
+	      |
+
+
+     ---	      ---
+
+Winkel: ganz hochklappen
+
 Erste Ausführung:
 
 	roscore
@@ -27,7 +36,7 @@ Erste Ausführung:
 
 	(einmalig zum Zeitsynchronisierung)
 	Auf server mit camera 0: sudo service ntp start
-	sudo ntpdate -p 8 ip-adresse (von camera 0)
+	sudo ntpdate -p 8 -dv ip-adresse (von camera 0)
 
 	in ros_ws/src/control_application/test/test-messages: (zum Tracking starten)
 	./system_start.sh
