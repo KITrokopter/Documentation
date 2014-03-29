@@ -1,5 +1,5 @@
 To sync times between servers
-`sudo ntpdate -p 8 -dv <ip>`
+`sudo ntpdate -dvup 8 <ip>`
 
 If syncing fails and output contains strata too high, you have to force updating the time. On your local machine, edit the `/etc/ntp.conf` and `/etc/default/ntpdate` to only contain the server you are syncing to.
 After that do:
@@ -9,5 +9,5 @@ After that do:
  * `sudo service ntp start`
  
 Now do
-`sudo ntpdate -p 8 -dv <ip>`
+`sudo ntpdate -dvup 8 <ip>`
 again, to ensure it worked.
