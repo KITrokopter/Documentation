@@ -11,3 +11,7 @@ After that do:
 Now do
 `sudo ntpdate -dvup 8 <ip>`
 again, to ensure it worked.
+
+
+
+You have to add the ip of the ntp server to the /etc/ntp.conf file, and remove all other ips.
