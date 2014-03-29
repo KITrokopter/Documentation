@@ -169,7 +169,23 @@ float64[] cameraRotationMatrices # Contains the 3x3 rotation matrices for the ca
 uint32[] IDs
 ```
 
-## Aktuelle Positionen
+## Aktuelle Positionen der Quadrokopter
+
+*   Name: quadcopter_position_{id}
+*   Typ: Topic
+*   Sender: Steueranwendung
+*   Empfänger: API
+*   Beschreibung: Aktuelle Positionen der Quadrokopter für die API
+
+Daten:
+```
+Header header
+float64 x
+float64 y
+float64 z
+```
+
+## Steuerungsdaten für Quadrokopter
 
 *   Name: CurrentPositions
 *   Sender: Steueranwendung
