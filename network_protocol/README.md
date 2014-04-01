@@ -184,6 +184,19 @@ float64 x
 float64 y
 float64 z
 ```
+## Tracking information
+
+*   name: quadcopter_is_tracked_{id}
+*   type: Topic
+*   sender: control_application
+*   receiver: api_application
+*   description: whether this quadrocopter is currently tracked
+*   
+data:
+```
+Header header
+bool is_tracked
+```
 
 ## Steuerungsdaten für Quadrokopter
 
