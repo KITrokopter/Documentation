@@ -271,7 +271,7 @@ uint32 quadcopterId
 Header header
 uint32 ID # the camera that should be activated/deactivated
 bool active
-bool global # if true, ID is ignored and all cameras are activated
+bool all # if true, ID is ignored and all cameras are activated
 ```
 
 ## Kalibrierungsauftrag
