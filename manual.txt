@@ -23,8 +23,8 @@ Restart of GUI/New Flight:
 	2. restart camera_application in the SAME order!
 	3. Press Calibrate Cameras...
 	4. Press on each camera picture to activate picture sending.
-	4. Press Calculate Calibration
-	5. starting quadcopter: rosrun quadcopter_application crazyflie_node
-	6. Press Scan for Quadcopters
-	7. Double click on each Quadcopter and choose the color range min and max (for example pink is min: 324, 120, 100; max: 356, 120, 100)
-	8. Start System
+	5. Press Calculate Calibration
+	6. starting quadcopter: rosrun quadcopter_application crazyflie_node
+	7. Press Scan for Quadcopters
+	8. Double click on each Quadcopter and choose the color range min and max (for example pink is min: 324, 120, 100; max: 356, 120, 100)
+	9. Start System
