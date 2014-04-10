@@ -22,6 +22,7 @@ Restart of GUI/New Flight:
 	1. starting GUI: rosrun gui_application kitrokopter
 	2. restart camera_application in the SAME order!
 	3. Press Calibrate Cameras...
+	4. Press on each camera picture to activate picture sending.
 	4. Press Calculate Calibration
 	5. starting quadcopter: rosrun quadcopter_application crazyflie_node
 	6. Press Scan for Quadcopters
