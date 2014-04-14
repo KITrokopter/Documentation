@@ -34,6 +34,6 @@ Restart of GUI/New Flight:
  7. Starting Quadcopter: `rosrun quadcopter_application crazyflie_node`
  8. Switch on the quadcopters that should start.
  9. Press `Scan for Quadcopters`. After this step no other quadcopter can be added. Adding a new quadcopter is only possible through restarting the GUI from now on.
- 10. Double click on each Quadcopter and choose the color range min and max (for example pink is min: 324, 120, 100; max: 356, 120, 100). You can find the quadcopter through pressing `blink`. You can have a look in src/camera_application/images/colors.txt for the ranges. You should multiplicate H by 2.
+ 10. Double click on each Quadcopter and choose the color range min and max (for example pink is min: 324, 120, 100; max: 356, 120, 100). You can find the quadcopter through pressing `blink`. You can have a look in src/camera_application/images/colors.txt for the ranges. You must multiplicate H by 2.
  11. Press `Start System`. The quadcopters should start as soon as they are tracked. If you have to restart a quadcopter, you have to restart the GUI.
 
