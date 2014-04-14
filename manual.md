@@ -1,12 +1,19 @@
-Hardware setup:
+### ROS
 
- 1. Place the cameras as high angled as possible with best more than 25 degrees between two camera line of sights. You should choose one main camera that is in the middle of the three cameras.
- 2. Plug the cameras in the computers, at most one camera per computer.
+* Start all computers.
+* Connect the Kinect. At most one Kinect per computer.
+* Connect the Crazyradios. (TODO: Maximum amount per computer?)
+* On every computer, on every terminal you use for rosrun, execute `export ROS_IP=<ip of your machine>`.
+* On every (! even the computer that will have roscore running) computer, on every terminal you use for rosrun, execute `export ROS_MASTER_URI=http://<ip of the machine that will run roscore>:11311`.
+* Execute roscore on the machine set as ROS_MASTER_URI.
+
+### Hardware setup:
+
+* Place the cameras as high angled as possible with best more than 25 degrees between two camera line of sights. You should choose one main camera that is in the middle of the three cameras.
 
 
 First Start:
 
- 1. Execute `roscore`.
  2. Synchronize times between servers. Have a look at ntp.md.
  3. Open `~/ros_ws/src/api_application/API.cpp` and search the method `dummyFormation()` (Line 19). For each quadcopter that should be started, an entry in the vector has to be created. Simply copy the lines with the call to `push_back()` to achieve this. Edit the number in the return line to contain the number of starting quadcopters: `APIFormation(positions, <number of starting quadcopters>)`.
  4. Start the GUI using `rosrun gui_application kitrokopter`.
