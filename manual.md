@@ -3,7 +3,7 @@
 * Start all computers.
 * Connect the Kinects. At most one Kinect per computer.
 * Place the cameras as high angled as possible with best more than 25 degrees between two camera line of sights. You should choose one main camera that is in the middle of the three cameras.
-* Connect the Crazyradios. (TODO: Maximum amount per computer?)
+* Connect the Crazyradios. At most one per computer.
 * On every computer, on every terminal you use for rosrun, execute `export ROS_IP=<ip of your machine>`.
 * On every (! even the computer that will have roscore running) computer, on every terminal you use for rosrun, execute `export ROS_MASTER_URI=http://<ip of the machine that will run roscore>:11311`.
 * Execute roscore on the machine set as ROS_MASTER_URI.
