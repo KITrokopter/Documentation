@@ -11,9 +11,9 @@ First Start:
  3. Open src/api_application/Api.cpp and copy for each quadcopter that should be started in dummyFormation() a vector with push_back(). Return APIFormation(positions, <number of starting quadcopters>).
  4. Starting GUI: `rosrun gui_application kitrokopter`.
  5. Starting cameras: 
-	-start main camera with `rosrun camera_application camera_application_node`
-	-start camera of each other server with `rosrun camera_application camera_application_node`, note down the order of starting the 		 camera_application_nodes for later (server 0, server 1, server 2,...)
-	-Starting was successfull if you get "Received images. Kinect seems to be working now.". Otherwise you should restart all cameras 		 after restarting the GUI (probably each camera has this bug at the first start).
+	start main camera with `rosrun camera_application camera_application_node`
+	start camera of each other server with `rosrun camera_application camera_application_node`, note down the order of starting the camera_application_nodes for later (server 0, server 1, server 2,...)
+	Starting was successfull if you get "Received images. Kinect seems to be working now.". Otherwise you should restart all camera after restarting the GUI (probably each camera has this bug at the first start).
  6. Execute `rosrun control_application control_application_node`.
  7. Enter chessboard values and press `Calibrate Cameras...`.
  8. Press `Start Calibration`.
