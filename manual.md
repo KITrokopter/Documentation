@@ -8,7 +8,7 @@ First Start:
 
  1. Execute `roscore`.
  2. Synchronize times between servers. Have a look at ntp.md.
- 3. Open src/api_application/Api.cpp and copy for each quadcopter that should be started in dummyFormation() a vector with push_back(). Return APIFormation(positions, <number of starting quadcopters>).
+ 3. Open src/api_application/Api.cpp and copy for each quadcopter that should be started in `dummyFormation()` in line 19 a vector with `push_back()`. Return `APIFormation(positions, <number of starting quadcopters>)`.
  4. Starting GUI: `rosrun gui_application kitrokopter`.
  5. Starting cameras: First start main camera with `rosrun camera_application camera_application_node`. Then start camera of each other server with `rosrun camera_application camera_application_node`, note down the order of starting the camera_application_nodes for later (server 0, server 1, server 2,...). Starting was successfull if you get "Received images. Kinect seems to be working now.". Otherwise you should restart all camera after restarting the GUI (probably each camera has this bug at the first start).
  6. Execute `rosrun control_application control_application_node`.
