@@ -14,7 +14,7 @@ First Start:
  6. Execute `rosrun control_application control_application_node`.
  7. Enter chessboard values and press `Calibrate Cameras...`.
  8. Press `Start Calibration`.
- 9. Press Take Picture, calibrate each camera alone (10-30 pictures) and later on take 15-30 pictures of each pair main camera and camera i. Be careful that the chessboard isn't moved during taking pictures as the cameras are not hardware synchronised with the others!
+ 9. Press `Take Picture`, calibrate each camera alone (20-30 pictures) and later on take 15-30 pictures of each pair main camera and camera i. Be careful that the chessboard isn't moved during taking pictures as the cameras are not hardware synchronised with the others!
  10. Press `Calculate Calibration`. If you plan to reuse the calibration, you should backup tmp/calibrationImages and tmp/calibrationResults.
  11. Starting Quadcopter: `rosrun quadcopter_application crazyflie_node`
  12. Switch on the quadcopters that should start.
