@@ -7,7 +7,7 @@ First Calibration:
 
  1. Execute `roscore`.
  2. Synchronize times between servers. Have a look at ntp.md.
- 3. Open src/api_application/Api.cpp and copy for each quadcopter that should be started in dummyFormation() in line 19 a vector with push_back(). Return APIFormation(positions, -number of starting quadcopters-).
+ 3. Open `~/ros_ws/src/api_application/API.cpp` and search the method `dummyFormation()` (Line 19). For each quadcopter that should be started, an entry in the vector has to be created. Simply copy the lines with the call to `push_back()` to achieve this. Edit the number in the return line to contain the number of starting quadcopters: `APIFormation(positions, <number of starting quadcopters>)`.
  4. Starting API: `rosrun api_application api_application_node`
  5. Starting cameras: First start main camera with `rosrun camera_application camera_application_node`. Then start camera of each other server with `rosrun camera_application camera_application_node`, note down the order of starting the camera_application_nodes for later (server 0, server 1, server 2,...). Starting was successfull if you get "Received images. Kinect seems to be working now.". Otherwise you should restart all camera after restarting the GUI (probably each camera has this bug at the first start).
  6. `rosrun control_application control_application_node`
